@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GmarketSansMedium', Arial, sans-serif;
+    margin: 0;
+    background-color: #d3d3d3; /* 배경색을 회색으로 설정 */
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+#calendar-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#calendar-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#calendar-controls button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#calendar-controls #month-year {
+    font-size: 1.5em;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    font-size: 1.2em;
+    box-sizing: border-box;
+}
+
+.days-header {
+    display: contents;
+}
+
+.days-header div {
+    text-align: center;
+    font-weight: bold;
+}
+
+.date-cell {
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.date-cell:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.date-display {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#next-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+}

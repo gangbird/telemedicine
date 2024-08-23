@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GmarketSansMedium', Arial, sans-serif;
+    margin: 0;
+    background-color: #d3d3d3; /* 배경색을 회색으로 변경 */
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* 페이지 전체가 화면에 맞도록 설정 */
+}
+
+header {
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    flex-grow: 1;
+    overflow-y: auto; /* 스크롤 가능하게 설정 */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 320px; /* 입력 칸의 최대 너비를 제한 */
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: 100%; /* 폼 전체가 스크롤 가능하게 */
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input, select, textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    max-height: 40px; /* 선택창의 높이를 고정 */
+}
+
+textarea {
+    resize: none;
+    height: 80px; /* 텍스트 입력 창의 높이 */
+}
+
+button[type="submit"] {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+    position: fixed; /* 버튼을 고정 */
+    bottom: 60px; /* 화면 하단에서의 위치 조정 */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* 버튼이 항상 위에 보이도록 */
+}
+
+footer {
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    position: fixed; /* 하단 패딩을 고정 */
+    bottom: 0;
+    left: 0;
+    z-index: 999; /* 버튼 바로 아래에 위치하도록 */
+}

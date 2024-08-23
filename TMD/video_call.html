@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화상 통화</title>
+    <link rel="stylesheet" href="styles_video_call.css">
+</head>
+<body>
+    <div id="video-container">
+        <div id="doctor-section">
+            <img src="images/doctor_image.jpg" alt="의사" id="doctor-image">
+        </div>
+        <div id="farmer-section">
+            <img src="images/farmer_image.jpg" alt="농민" id="farmer-image">
+            <div id="camera-off-overlay"></div>
+        </div>
+    </div>
+    <div id="controls">
+        <button id="camera-button">📷</button>
+        <button id="microphone-button">🎤</button>
+        <button id="end-call-button">📞</button>
+        <button id="chat-button">💬</button>
+    </div>
+    <div id="chat-container">
+        <div id="chat-window">
+            <div id="chat-header">
+                <span id="chat-title">채팅</span>
+                <button id="close-chat-button">X</button>
+            </div>
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="메시지를 입력하세요">
+            <button id="send-button">보내기</button>
+        </div>
+    </div>
+
+    <script src="script_video_call.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날짜 선택</title>
+    <link rel="stylesheet" href="styles_date_picker.css">
+</head>
+<body>
+    <header>
+        <h1>날짜 선택</h1>
+    </header>
+    <main>
+        <div id="calendar-container">
+            <div id="calendar-controls">
+                <button id="prev-month">이전</button>
+                <span id="month-year"></span>
+                <button id="next-month">다음</button>
+            </div>
+            <div id="calendar"></div>
+        </div>
+        <p id="selected-date" class="date-display"></p>
+    </main>
+    <footer>
+        <button id="next-button">다음</button>
+    </footer>
+
+    <script src="script_date_picker.js"></script>
+</body>
+</html>
